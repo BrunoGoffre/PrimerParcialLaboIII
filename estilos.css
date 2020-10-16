@@ -1,0 +1,142 @@
+body{
+    position: relative;
+}
+.labels{
+   margin-top: 2rem ;
+   margin-left: 1.5rem ;
+   font-size: 25px;
+}
+h2{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.loading{
+    position: absolute;
+    margin-left: 35%;
+}
+.contenedor{
+    background-color:  rgb(245, 241, 241);
+    border-radius: 5px;
+    width: 45%;
+    box-shadow: 10px 5px 10px 10px rgba(112, 110, 110, 0.601);
+    position: absolute;
+    top: 20%;    
+    left: 25%;      
+    animation-name: abrir;
+    animation-duration: 1s;
+}
+@keyframes abrir{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*--------------------Inputs-------------------- */
+.select{
+    width: 9rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+#fechaFinal{
+    height: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.radios{
+    margin-left: 1.5rem;
+    font-size: 19px;
+}
+
+
+input[type=text]{
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 20px ;
+    font-size: 19px;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/*--------------------Inputs-------------------- */
+
+/*--------------------Tabla-------------------- */
+table{
+    border-collapse: collapse;
+    width: 70%;
+    
+}
+#tCuerpo{
+    font-size: 1.5rem;
+}
+th {
+    background-color: teal;
+    border-color: black;
+    width: 300px;
+    height: 35px;
+    text-align: left;
+    color: white;
+    margin: 10px;
+    font-size: 19px;
+}
+tr:nth-child(even){
+    background-color: rgb(224, 216, 216);
+}
+/*--------------------Tabla-------------------- */
+
+/*--------------------Botones--------------------*/
+#btnCerrar{
+    position: absolute;
+    top: 0%;
+    left: 94.5%;
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    font-size: 90%;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: White;
+}
+.botonModificar{
+    position: relative;
+    background-color: rgb(65, 148, 26);
+    border:none;
+    border-radius: 5px;
+    color:white;
+    padding-left: 15px 15px;
+    margin: 15px 0px ;
+    font-size: 25px;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    margin: 30px 20px ;
+}
+.botonEliminar{
+    background-color: red;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    padding-left: 15px 15px;
+    margin: 15px 0px ;
+    font-size: 25px;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    margin: 30px 20px ;
+}
+
+/*--------------------Botones--------------------*/
+
+/*--------------------alertas--------------------*/
+.bien{
+    border: 1px solid #ccc;
+}
+
+.error{
+    border: 1px solid red;
+}
+/*--------------------alertas--------------------*/

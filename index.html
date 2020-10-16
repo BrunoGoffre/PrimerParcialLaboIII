@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parcial</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script src="logica.js"></script>
+</head>
+
+<body>
+
+    <div class="loading" id="loading">
+        <img src="loading-gif-png-4.gif" width="512" height="512">
+    </div>
+
+    <div id="contenedor">
+        <div id="contenedorModificar" class="contenedor" hidden>
+            <button id="btnCerrar" class="cerrar">X</button>
+            <br>
+            
+            <label for="nombre" class="labels">Nombre</label></br>
+            <input type="text" id="nombre" class="bien" class="txtNombre" name="firstname" placeholder="Nombre..."></br>
+
+            <label for="fecha" class="labels">Fecha</label></br>
+            <input type="date" id="fechaFinal" class="bien" class="fechaFinal"  name="fechaFinal" placeholder="Fecha..."></br>
+
+            <label for="cuatrimestre" class="labels">Cuatrimestre</label></br>
+            <select name="cuatrimestre" id="cuatrimestre" class="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></br>
+
+            <label class="labels">Turno</label></br>
+            <div class="radios">
+                <input type="radio" id="manana" name="turno">
+                <label for="manana">Mañana</label>
+
+                <input type="radio" id="noche" name="turno">
+                <label for="noche">Noche</label>
+            </div>
+            <br>
+            <div class="botones">
+                <input type="button" value="Eliminar" class="botonEliminar" id="btnEliminar">
+                <input type="button" value="Modificar" class="botonModificar" id="btnModificar">
+            </div>
+        </div>
+
+        <h2>Lista de Materias</h2>
+    
+        <table id ="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha Final</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody id="tCuerpo">
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
